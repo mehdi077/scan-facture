@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 
 // Mock data for recent conversions
 const recentConversions = [
@@ -59,7 +60,7 @@ export function RecentConversions() {
           {recentConversions.map((conversion) => (
             <div key={conversion.id} className="flex items-center justify-between p-2 rounded-lg hover:bg-muted/50">
               <div className="flex items-center gap-3">
-                <FileSpreadsheet className="h-10 w-10 text-primary" />
+                <Image src="/xcel-icon.png" alt="Excel Icon" width={40} height={40} className="h-10 w-10" />
                 <div>
                   <p className="font-medium">{conversion.convertedName}</p>
                   <p className="text-xs text-muted-foreground">
