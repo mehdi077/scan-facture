@@ -31,7 +31,7 @@ const AuthOverlay: React.FC<AuthOverlayProps> = ({ isLoading }) => {
                   <span>Chargement...</span>
                 </span>
               ) : (
-                <span>Se connecter / S'inscrire</span>
+                <span>{"Se connecter / S'inscrire"}</span>
               )}
             </Button>
           </SignInButton>
