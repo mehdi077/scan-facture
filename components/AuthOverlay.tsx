@@ -18,7 +18,7 @@ const AuthOverlay: React.FC = () => {
         <CardContent>
           <SignInButton mode="modal">
             <Button className="w-full" type="button">
-              Se connecter / S'inscrire
+              {"Se connecter / S'inscrire"}
             </Button>
           </SignInButton>
         </CardContent>
